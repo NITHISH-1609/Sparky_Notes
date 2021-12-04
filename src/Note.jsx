@@ -1,15 +1,29 @@
 import React from "react";
 
-function Note(){
+
+function singlenote(props){
     return (
         <div className="note">
             <h1>
-                Minecraft!
+                {props.title}
             </h1>
             <p>
-                Best Survival Game In The World!
+                {props.content}
             </p>
         </div>
+    );
+}
+
+
+function Note(props){
+    return (
+
+        <div>
+
+            {singlenote(props)}
+
+        </div>
+        
     );
 }
 
