@@ -1,5 +1,5 @@
 import React from "react";
-import notes from "./Notes";
+
 
 function singlenote(props){
     return (
@@ -15,12 +15,12 @@ function singlenote(props){
 }
 
 
-function Note(){
+function Note(props){
     return (
 
         <div>
 
-            {notes.map(singlenote)}
+            {singlenote(props)}
 
         </div>
         
